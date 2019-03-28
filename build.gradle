@@ -1,0 +1,18 @@
+allprojects{
+    apply plugin:'java'
+
+    group 'com.xly'
+    version '0.1'
+
+    sourceCompatibility = 1.8
+
+    repositories {
+        mavenCentral()
+        jcenter()
+    }
+    dependencies {
+        // spring ioc
+        implementation 'org.springframework:spring-context:5.1.5.RELEASE'
+        testCompile group: 'junit', name: 'junit', version: '4.12'
+    }
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="indexDAO" class="com.xly.iocapplication.dao.impl.IndexDAOImpl">
+        <!--基本数据类型的注入-->
+        <property name="str" value="string"/>
+        <!--Properties数据类型的注入-->
+        <property name="prop">
+            <props>
+                <prop key="key1">value1</prop>
+                <prop key="key2">value2</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!--setter注入依赖-->
+    <bean id="setterService" class="com.xly.iocapplication.service.SetterService">
+        <property name="indexDAO" ref="indexDAO"/>
+    </bean>
+
+    <bean id="constructorService" class="com.xly.iocapplication.service.ConstructorService">
+        <constructor-arg name="indexDAO" ref="indexDAO"/>
+    </bean>
+</beans>
