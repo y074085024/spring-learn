@@ -1,7 +1,7 @@
-package com.xly.iocapplication;
+package com.xly.iocapplication.javaconfig;
 
-import com.xly.iocapplication.config.JavaConfig;
-import com.xly.iocapplication.service.JavaConfigService;
+import com.xly.iocapplication.javaconfig.JavaConfig;
+import com.xly.iocapplication.javaconfig.JavaConfigService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**

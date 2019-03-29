@@ -17,3 +17,17 @@ ioc框架把对象实例化的过程透明化，程序员只需要面向接口�
 spring-original.xml表示仅传统xml方式描述依赖实现方式
 spring-annotation.xml表示使用xml方式开启注解，然后使用注解描述是否需要注入元数据信息
 spring-config.xml表示以javaconfig技术引入的xml，体现了三种依赖描述的混合使用方式
+spring-autowire.xml表 自动装配
+
+自动装配理解
+-----------------------------------------------------
+对于一个BeanDefintion，可以有4种自动装配模式，这种装配模式是根据setter，constructor方
+法进行装配的，可以通过xml配置default-autowire字段或者通过改变BeanDefintion的装配模式（ImportSelectorRegistar）
+默认情况下自己定义的BeanDefintion装配模式是no，那么如果使用注解方式@Resource或@Autowire进行
+注入，则spring是使用BeanPostProcessor进行注入，注解方式根据注解在属性还是方法上，根据属性
+字段或setter，constructor方法的反射方式进行的，@Resource默认先根据byName后根据byType，@Autowire相反
+
+singleton依赖prototype的问题
+-----------------------------------------------------
+在业务方法中调用被@Lookup注解方法就可以实现，实现原始是动态代理
+

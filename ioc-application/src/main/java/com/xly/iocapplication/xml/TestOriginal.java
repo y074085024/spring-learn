@@ -1,7 +1,5 @@
-package com.xly.iocapplication;
+package com.xly.iocapplication.xml;
 
-import com.xly.iocapplication.service.ConstructorService;
-import com.xly.iocapplication.service.SetterService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**

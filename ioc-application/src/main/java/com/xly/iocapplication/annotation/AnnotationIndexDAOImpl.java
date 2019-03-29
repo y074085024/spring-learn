@@ -1,4 +1,4 @@
-package com.xly.iocapplication.dao.impl;
+package com.xly.iocapplication.annotation;
 
 import com.xly.iocapplication.dao.IndexDAO;
 import org.springframework.stereotype.Repository;

@@ -1,6 +1,5 @@
-package com.xly.iocapplication;
+package com.xly.iocapplication.annotation;
 
-import com.xly.iocapplication.service.AnnotationService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
