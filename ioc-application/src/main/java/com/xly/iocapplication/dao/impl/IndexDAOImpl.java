@@ -10,6 +10,12 @@ import java.util.Properties;
  */
 public class IndexDAOImpl implements IndexDAO {
     private String str;
+    private String pStr;
+
+    public void setpStr(String pStr) {
+        this.pStr = pStr;
+    }
+
     private Properties prop;
     @Override
     public String save() {

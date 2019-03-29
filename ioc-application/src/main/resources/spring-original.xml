@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean id="indexDAO" class="com.xly.iocapplication.dao.impl.IndexDAOImpl">
+    <!--使用p-namespace需要引入xmlns:p，c-name这里不做演示-->
+    <bean id="indexDAO" class="com.xly.iocapplication.dao.impl.IndexDAOImpl" p:pStr="XXX">
         <!--基本数据类型的注入-->
         <property name="str" value="string"/>
         <!--Properties数据类型的注入-->
