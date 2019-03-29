@@ -9,7 +9,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
  * @author yxl
  * @since 2019/3/29
  */
-public class TestJavaConfig {
+public class JavaConfigTest {
     public static void main(String[] args) {
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(JavaConfig.class);
         JavaConfigService javaConfigService = (JavaConfigService) applicationContext.getBean("javaConfigService");

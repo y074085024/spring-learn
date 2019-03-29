@@ -11,8 +11,10 @@ allprojects{
         jcenter()
     }
     dependencies {
-        // spring ioc
+        // spring ioc核心
         implementation 'org.springframework:spring-context:5.1.5.RELEASE'
+        // 扫描索引加快spring容器对类的扫描
+        compileOnly 'org.springframework:spring-context-indexer:5.1.5.RELEASE'
         testCompile group: 'junit', name: 'junit', version: '4.12'
     }
 }

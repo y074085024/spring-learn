@@ -4,6 +4,7 @@ import com.xly.iocapplication.xml.AutowireService;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
+ * xml+注解方式使用spring-ioc
  * @author yxl
  * @since 2019/3/29
  */

@@ -7,7 +7,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @author yxl
  * @since 2019/3/28
  */
-public class TestAnnotation {
+public class AnnotationTest {
     public static void main(String[] args) {
         ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("spring-annotation.xml");
          AnnotationService annotationService = (AnnotationService) applicationContext.getBean("annotationService");
