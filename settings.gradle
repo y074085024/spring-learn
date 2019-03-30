@@ -1,3 +1,4 @@
 rootProject.name = 'spring-learn'
 include 'ioc-application'
+include 'aop-applicattion'
 

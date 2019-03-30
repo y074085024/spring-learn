@@ -1,0 +1,4 @@
+dependencies{
+    // aspectj注解依赖
+    implementation 'org.aspectj:aspectjweaver:1.9.3.RC1'
+}
