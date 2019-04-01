@@ -1,8 +1,5 @@
 package com.xly.aopapplication.prototypeaop;
 
-import com.xly.aopapplication.prototypeaop.service.Other1Service;
-import com.xly.aopapplication.prototypeaop.service.Other2Service;
-import com.xly.aopapplication.prototypeaop.service2.TestService;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 /**
